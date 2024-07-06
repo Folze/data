@@ -36,16 +36,24 @@ function calculateDifference(startDate, endDate) {
 let interval;
 
 const updateDisplay = (timeDiff) => {
+  const {
+    yearsDifference,
+    monthsDifference,
+    daysDifference,
+    hoursDifference,
+    minutesDifference,
+    secondsDifference,
+  } = timeDiff;
   if (timeDiff.yearsDifference == 0) {
     UI_ELEMENTS.timeRemaining.textContent = `
-  ${timeDiff.monthsDifference} месяцев
-  ${timeDiff.daysDifference} дней ${timeDiff.hoursDifference} часов
-  ${timeDiff.minutesDifference} минут ${timeDiff.secondsDifference} секунд`;
+  ${monthsDifference} месяцев
+  ${daysDifference} дней ${hoursDifference} часов
+  ${minutesDifference} минут ${secondsDifference} секунд`;
   } else {
     UI_ELEMENTS.timeRemaining.textContent = `
-    ${timeDiff.yearsDifference} лет ${timeDiff.monthsDifference} месяцев
-    ${timeDiff.daysDifference} дней ${timeDiff.hoursDifference} часов
-    ${timeDiff.minutesDifference} минут ${timeDiff.secondsDifference} секунд`;
+    ${yearsDifference} лет ${monthsDifference} месяцев
+    ${daysDifference} дней ${hoursDifference} часов
+    ${minutesDifference} минут ${secondsDifference} секунд`;
   }
 };
 
