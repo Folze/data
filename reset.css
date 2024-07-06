@@ -1,0 +1,61 @@
+/* reset.css */
+
+/* Убираем отступы, поля и размеры для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем отступы для заголовков и параграфов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Убираем отступы для списков */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Убираем оформление для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стили для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Убираем стили для полей форм */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+}
+
+/* Убираем стили для изображений */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Устанавливаем базовые стили для html и body */
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
